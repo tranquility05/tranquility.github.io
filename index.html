@@ -15,240 +15,190 @@ Andy M. Tong | Teaching Support Homepage
 /* 页面整体 */
 
 body {
-
-    max-width: 850px;
-
+    max-width: 1300px;
     margin: auto;
-
     font-family: Arial, Helvetica, sans-serif;
-
     line-height: 1.8;
-
-    padding: 40px;
-
+    padding: 35px;
     color: #222;
-
 }
 
 
 /* 顶部个人信息 */
 
 .profile {
-
     text-align: center;
-
     margin-bottom: 50px;
-
 }
 
 
 /* 头像 */
 
 .profile img {
-
     width: 160px;
-
     height: 160px;
-
     border-radius: 50%;
-
     object-fit: cover;
-
 }
 
 
 /* 姓名 */
 
 .profile h1 {
-
     font-size: 36px;
-
     margin-top: 20px;
-
     margin-bottom: 8px;
-
 }
 
 
 /* 副标题 */
 
 .subtitle {
-
     font-size: 16px;
-
     color: #666;
-
     max-width: 700px;
-
     margin: auto;
-
 }
-
 
 
 /* 标题 */
 
 h2 {
-
     font-size: 26px;
-
     margin-top: 45px;
-
     padding-bottom: 8px;
-
     border-bottom: 1px solid #ddd;
-
 }
 
 
 /* 参考文献 */
 
 .references {
-
     margin-left: 30px;
-
     margin-bottom: 5px;
-
     font-size: 14px;
-
     color: #666;
-
 }
 
 .references p {
-
     margin: 9px 0;
-
     line-height: 1.5;
-
 }
 
 .reference-title {
-
     font-size: 20px;
-
     color: #222222;
-
     margin-top: 160px;
-
     margin-bottom: 160px;
-
     margin-left: 25px;
-
 }
 
 .reference-intro {
-
     line-height: 1.8;
-
     color: #222222;
-
     margin-top: 160px;
-
     margin-bottom: 160px;
-
     margin-left: 25px;
-
     font-size: 16px;
-
 }
+
 
 /* 正文 */
 
 p {
-
     text-align: justify;
-
 }
-
 
 
 /* 链接 */
 
 a {
-
     color: #0066cc;
-
     text-decoration: none;
-
 }
-
 
 a:hover {
-
     text-decoration: underline;
-
 }
-
 
 
 /* 课程模块 */
 
 .course {
-
     margin-top: 35px;
-
 }
-
 
 
 /* 课程名称 */
 
 .course-title {
-
     font-size: 22px;
-
     font-weight: bold;
-
 }
 
 
 /* 课程号 */
 
 .code {
-
     font-size: 14px;
-
     color: #777;
-
     font-weight: normal;
-
     margin-left: 8px;
-
 }
 
 
 /* 学期 */
 
 .semester {
-
     font-size: 15px;
-
     color: #666;
-
     margin-left: 25px;
-
     margin-top: 5px;
-
 }
 
 
 /* PDF */
 
 .material {
-
     margin-left: 25px;
-
     margin-top: 10px;
-
 }
 
 .intro {
     margin-left: 25px;
-
     margin-top: 10px;
-
     text-align: justify;
+}
+
+
+/* Teaching Materials: 2×2 course cards */
+
+.teaching-materials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 70px;
+    row-gap: 55px;
+    margin-top: 35px;
+}
+
+.teaching-materials-grid .course {
+    margin-top: 0;
+}
+
+.course-image {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+@media (max-width: 700px) {
+    .teaching-materials-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 </style>
@@ -257,28 +207,22 @@ a:hover {
 </head>
 
 
-
 <body>
-
 
 
 <!-- 个人信息 -->
 
-
 <div class="profile">
 
-
 <img src="tr_maple.png">
-
 
 <h1>
 Andy M. Tong
 </h1>
 
-
 <div class="subtitle">
 
-Dept. of Optics and Optical Engineering, University of Science and Technology of China
+Department of Optics and Optical Engineering, University of Science and Technology of China
 
 <br>
 
@@ -286,27 +230,20 @@ Dept. of Optics and Optical Engineering, University of Science and Technology of
 
 </div>
 
-
 </div>
 
 
-
-
-
 <!-- 个人介绍 -->
-
 
 <h2>
 About This Webpage
 </h2>
 
-
 <p>
-Welcome to my teaching and academic support homepage.
+Welcome to my teaching and academic support homepage!
 This website provides course materials and academic resources
 for physics courses.
 </p>
-
 
 <p>
 I am currently a senior student in the Department of
@@ -315,7 +252,6 @@ enrolled in 2023. Since 2025, I have served as a peer instructor
 in the School of Physical Sciences’ Peer-Assisted Learning Program,
 providing course guidance and learning support for students.
 </p>
-
 
 <p>
 My teaching experience includes courses such as Mechanics A/H,
@@ -340,39 +276,40 @@ yftong@mail.ustc.edu.cn
 
 <!-- 版权 -->
 
-
 <h2>
 Copyright & Usage Notice
 </h2>
-
 
 <p>
 <b>The course materials are independently prepared for teaching and learning purposes. Some figures, examples, exercises, and other materials are adapted from the references listed below and are properly attributed to their original sources. All such referenced materials remain the property of their respective authors and publishers and are used solely for educational purposes. Original materials prepared by me may be used for educational and teaching purposes with proper attribution. All other rights are reserved. None of these materials may be reproduced or redistributed on other public platforms without permission. Unauthorized commercial use is not permitted.</b>
 </p>
 
+
 <!-- 更新日志 -->
+
 <h2>
 Latest Updates
 </h2>
+
 <p>
 Added Daniel Kleppner and Robert Kolenkow's <i>An Introduction to Mechanics</i> as a reference for Mechanics A/H. This book comes highly recommended by many.        1 September, 2026.
 </p>
-<!-- 教学资料 -->
 
+
+<!-- 教学资料 -->
 
 <h2>
 Teaching Materials
 </h2>
 
-
-
+<div class="teaching-materials-grid">
 
 
 <!-- Mechanics A/H -->
 
-
 <div class="course">
 
+<img class="course-image" src="mechanics.png">
 
 <div class="course-title">
 
@@ -383,7 +320,6 @@ PHYS1001A, PHYS1001H
 </span>
 
 </div>
-
 
 <div class="semester">
 
@@ -409,7 +345,6 @@ Lecture01 Space and Time (PDF)
 
 <div class="references">
 
-
 <p class="reference-title">
     <b>References</b>
 </p>
@@ -419,12 +354,13 @@ Lecture01 Space and Time (PDF)
 <i>力学（物理类），<b>第一版</b></i>，
 北京大学出版社.
 </p>
-    
-<p>[2] Daniel Kleppner and Robert Kolenkow,
+
+<p>
+[2] Daniel Kleppner and Robert Kolenkow,
 <i>An Introduction to Mechanics, 2nd edition</i>,
 Cambridge University Press.
 </p>
-    
+
 <p>
 [3] 梁灿彬，曹周键，
 <i>从零学相对论</i>，
@@ -502,23 +438,16 @@ As my studies do not focus on theoretical physics, my understanding of the mathe
 科学出版社.
 </p>
 
-
 </div>
 
-
 </div>
-
-
-
-
-
 
 
 <!-- Electromagnetism A/H -->
 
-
 <div class="course">
 
+<img class="course-image" src="electromagnetism.png">
 
 <div class="course-title">
 
@@ -530,147 +459,98 @@ PHYS1004A, PHYS1004H
 
 </div>
 
-
 <div class="semester">
 
-Semester: Spring 2025 (Pre-exam Review Session), Spring 2026 (Peer-Assisted Learning)
+Semester: Spring 2025 (Pre-exam Review), Spring 2026 (Peer-Assisted Learning)
 
 </div>
-
 
 <div class="material">
 
 📄
 
 <a href="lecture01-0517.pdf">
-
 Lecture01 - Electrostatics(I) (PDF)
-
 </a>
 
-
 <br>
-
 
 📄
 
 <a href="lecture02-0524.pdf">
-
 Lecture02 - Electrostatics(II) (PDF)
-
 </a>
 
-
 <br>
-
 
 📄
 
 <a href="lecture03-0530.pdf">
-
 Lecture03 - Magnetostatics(I) (PDF)
-
 </a>
 
-
 <br>
-
 
 📄
 
 <a href="lecture04-0602.pdf">
-
 Lecture04 - Magnetostatics(II) (PDF)
-
 </a>
 
-
 <br>
-
 
 📄
 
 <a href="lecture05,06-0629.pdf">
-
 Lecture05,06 - Maxwell's electromagnetic theory (PDF)
-
 </a>
 
-
-
-
 <br>
-
 
 📄
 
 <a href="lecture07-0702-final review.pdf">
-
 Lecture07 - Final review (PDF)
-
 </a>
 
-
-
-
 <br>
-
 
 📄
 
 <a href="lecture03_exercises.pdf">
-
 Exercises_03 (PDF)
-
 </a>
 
-
-
 <br>
-
 
 📄
 
 <a href="lecture04_exercises.pdf">
-
 Exercises_04 (PDF)
-
 </a>
 
-
-
 <br>
-
 
 📄
 
 <a href="exercises03,04_solution.pdf">
-
 Exercises_03,04_solution (PDF)
-
 </a>
 
-
 <br>
-
 
 📄
 
 <a href="em-questions.pdf">
-
 Conceptual questions (PDF)
-
 </a>
-
 
 </div>
 
-
 <div class="references">
 
-
 <p class="reference-title">
-    <b>References</b>
+<b>References</b>
 </p>
 
 <p>
@@ -719,24 +599,16 @@ Wiley.
 科学出版社.
 </p>
 
-
 </div>
 
-
-
 </div>
-
-
-
-
-
 
 
 <!-- Optics A -->
 
-
 <div class="course">
 
+<img class="course-image" src="optics.png">
 
 <div class="course-title">
 
@@ -748,10 +620,9 @@ PHYS1003A
 
 </div>
 
-
 <div class="semester">
 
-Semester: Fall 2025 (Pre-exam Review Session), Fall 2026 (Pre-exam Review Session)
+Semester: Fall 2025 (Pre-exam Review), Fall 2026 (Pre-exam Review)
 
 </div>
 
@@ -764,57 +635,43 @@ Semester: Fall 2025 (Pre-exam Review Session), Fall 2026 (Pre-exam Review Sessio
 📄
 
 <a href="test.pdf">
-
 Mid-term (PDF) - NOT available now
-
 </a>
 
 <br>
-
 
 📄
 
 <a href="test.pdf">
-
 Final (PDF) - NOT available now
-
 </a>
 
-
 <br>
-
 
 📄
 
 <a href="25-Optics-exercise.pdf">
-
 Exercises_Midterm (PDF)
-
 </a>
 
 <br>
 
-
 📄
 
 <a href="optics_problems_26fall_version.pdf">
-
 Conceptual questions (PDF)
-
 </a>
 
 </div>
 
 <div class="intro">
-
 <b>Students looking for a more in-depth treatment of the subject may also refer to the materials and textbooks listed below for the Fundamentals of Modern Optics course (038008).</b>
 </div>
 
 <div class="references">
 
-
 <p class="reference-title">
-    <b>References</b>
+<b>References</b>
 </p>
 
 <p>
@@ -828,12 +685,11 @@ Conceptual questions (PDF)
 </div>
 
 
-
 <!-- QM B -->
-
 
 <div class="course">
 
+<img class="course-image" src="quantum-mechanics.png">
 
 <div class="course-title">
 
@@ -845,480 +701,476 @@ Conceptual questions (PDF)
 
 </div>
 
-
 <div class="semester">
 
-Semester: Fall 2026 (Pre-exam Review Session)
+Semester: Fall 2026 (Pre-exam Review)
 
 </div>
-
 
 <div class="material">
 
 📄
 
 <a href="qmB_2026fa.pdf">
-
 Mid-term (PDF)
-
 </a>
 
 <br>
-
 
 📄
 
 <a href="qmB_final_2026fa.pdf">
-
 Final (PDF)
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-<h2>
-Shared Resources
-</h2>
-
-<!-- Exp 5 -->
-
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Fundamental Experiments in Physics (Level-5 General Physics Lab)
-
-<span class="code">
-004074
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Spring 2026
-
-</div>
-
-<div class="intro">
-I'm sharing these report templates as references for students working on their own experimental reports. They are intended to provide ideas for organization and presentation, not to be copied directly. Parts of my own writing process also involved the use of AI tools.
-</div>
-
-<div class="material">
-
-📄
-
-<a href="exp1.pdf">
-
-1. 拉曼光谱 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp2.pdf">
-
-2. 微电子工艺及半导体材料 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp3.pdf">
-
-3. 量子保密通信 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp4.pdf">
-
-4. 非线性二次谐波 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp5.pdf">
-
-5. 低温热电势 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp6.pdf">
-
-6. 量子计算实验 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp7.pdf">
-
-7. 磁光效应 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp8.pdf">
-
-8. 超导临界温度 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp9.pdf">
-
-9. 红外光谱 (PDF)
-
-</a>
-
-<br>
-
-
-📄
-
-<a href="exp10.pdf">
-
-10. 离子阱-预习报告 (PDF)
-
 </a>
 
 </div>
 
-
-</div>
-
-<!-- 数字电路 -->
-
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Digital Circuits
-
-<span class="code">
-EE2502
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Fall 2024
-
-</div>
-
-<div class="intro">
-EE2502 is an introductory course on circuits designed for students in the School of Physical Sciences, covering the fundamentals of digital circuits. This review material was compiled based on Prof. Cao's lecture notes in 2024 and is intended to assist with final exam preparation. All figures are reproduced from Prof. Cao's course notes and are included for educational purposes only.
-</div>
-
-<div class="material">
-
-📄
-
-<a href="digital.pdf">
-
-Digital Circuits Review Notes (PDF)
-
-</a>
-
 </div>
 
 
 </div>
 
-<!-- 概统 -->
 
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Probability Theory and Mathematical Statistics
-
-<span class="code">
-STAT2002
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Fall 2024
-
-</div>
-
-<div class="intro">
-STAT2002 is a course designed for non-mathematics majors, consisting primarily of two parts: probability theory and mathematical statistics. This material summarizes and organizes key concepts from the probability theory section for review. As this material is prepared from a non-mathematics perspective, it does NOT cover measure theory or related topics and is NOT intended to be mathematically rigorous. It is provided solely as a reference for students enrolled in this course.
-</div>
-
-<div class="material">
-
-📄
-
-<a href="stat.pdf">
-
-Probability Theory Review Notes (PDF)
-
-</a>
-
-</div>
-
-
-</div>
-
-<!-- 热统 -->
-
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Thermodynamics and Statistical Physics A
-
-<span class="code">
-022062
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Fall 2025
-
-</div>
-
-<div class="intro">
-This summary focuses exclusively on the introductory statistical physics section. The structure and order of presentation have been reorganized based on my understanding of the subject, and it is intended primarily for final exam review. The years indicated for the exam questions refer to the corresponding final exams in USTC's exam collection. Some of the questions are really interesting and worth working through.
-</div>
-
-<div class="material">
-
-📄
-
-<a href="thermo.pdf">
-
-Introductory Statistical Physics Review Notes (PDF)
-
-</a>
-
-</div>
-
-
-</div>
-
-<!-- 计算物理 -->
-
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Computational Physics B
-
-<span class="code">
-004040
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Fall 2025
-
-</div>
-
-<div class="intro">
-Most students who, like me, take the B course probably do so mainly for the credits and to save time. This material is therefore intended as a concise summary of the key points from Prof. Wei's class for final-exam preparation, <b>focusing only on the most important formulas rather than covering the entire course</b>. While it may not be the best way to understand the course, I hope it can still serve as a useful reference for exam preparation. Please note that it was transcribed from handwritten notes using handwriting recognition and proofread as a whole, but <b>some errors may still remain</b>. In case of any discrepancy, please refer to the course materials provided by the instructor.
-</div>
-
-<div class="material">
-
-📄
-
-<a href="CPB.pdf">
-
-CPB Review Notes (PDF)
-
-</a>
-
-</div>
-
-
-</div>
-
-<!-- 近光 -->
-
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Fundmentals of Modern Optics
-
-<span class="code">
-038008
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Spring 2025
-
-</div>
-
-<div class="intro">
-
-038008 is a required course designed specifically for students in the Department of Optics and Optical Engineering, providing an introduction to optical researches. It is also one of the top three courses I have taken during my undergraduate studies, and I highly recommend that sophomores interested in optics consider taking it early. This collection of conceptual questions is intended to make up for the lack of a suitable textbook. After completing each chapter, it can be used to review the key ideas, and it may also be helpful for students wanting to explore beyond the depth covered in Optics A. 
-</div>
-
-<div class="material">
-
-📄
-
-<a href="Modern Optics.pdf">
-
-Conceptual Questions for Modern Optics (PDF)
-
-</a>
-
-</div>
-<div class="references">
-
-
-<p class="reference-title">
-    <b>References</b>
-</p>
-
-<p>
-[1] Max Born and Emil Wolf,
-<i>Principles of Optics, 7th edition</i>,
-Cambridge University Press.
-</p>
-
-</div>
-</div>
-
-<!-- 量子光学 -->
-
-
-<div class="course">
-
-
-<div class="course-title">
-
-• Quantum Optics
-
-<span class="code">
-PHYS5255P
-</span>
-
-</div>
-
-
-<div class="semester">
-
-Course taken: Spring 2026
-
-</div>
-
-<div class="intro">
-
-PHYS5255P is one of the core graduate-level courses in the Department of Optics. The material mainly follows the first nine chapters of Scully’s classic textbook, with additional material from several other textbooks. It is intended as an introduction to quantum optics and is suitable for students who are new to the field. <b>Please note that this material was transcribed from handwritten notes using handwriting recognition and may contain some errors.</b>
-
-</div>
-
-<div class="material">
-
-📄
-
-<a href="Quantum Optics.pdf">
-
-Quantum Optics Review Notes (PDF) - To be updated soon
-
-</a>
-
-</div>
-
-<div class="references">
-
-
-<p class="reference-title">
-    <b>References</b>
-</p>
-
-<p>
-[1] M. O. Scully and M. S. Zubairy,
-<i>Quantum Optics</i>,
-Cambridge University Press.
-</p>
-
-<p>
-[2] Christopher C. Gerry, Peter L. Knight，
-<i>量子光学导论</i>，
-景俊译，
-清华大学出版社.
-</p>
-
-<p>
-[3] 张智明，
-<i>量子光学</i>，
-科学出版社.
-</p>
-
-</div>
-
-</div>
+<!-- Shared Resources -->
+
+<h2> 
+Shared Resources 
+</h2> 
+ 
+<!-- Exp 5 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Fundamental Experiments in Physics (Level-5 General Physics Lab) 
+ 
+<span class="code"> 
+004074 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Spring 2026 
+ 
+</div> 
+ 
+<div class="intro"> 
+I'm sharing these report templates as references for students working on their own experimental reports. They are intended to provide ideas for organization and presentation, not to be copied directly. Parts of my own writing process also involved the use of AI tools. 
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="exp1.pdf"> 
+ 
+1. 拉曼光谱 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp2.pdf"> 
+ 
+2. 微电子工艺及半导体材料 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp3.pdf"> 
+ 
+3. 量子保密通信 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp4.pdf"> 
+ 
+4. 非线性二次谐波 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp5.pdf"> 
+ 
+5. 低温热电势 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp6.pdf"> 
+ 
+6. 量子计算实验 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp7.pdf"> 
+ 
+7. 磁光效应 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp8.pdf"> 
+ 
+8. 超导临界温度 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp9.pdf"> 
+ 
+9. 红外光谱 (PDF) 
+ 
+</a> 
+ 
+<br> 
+ 
+ 
+📄 
+ 
+<a href="exp10.pdf"> 
+ 
+10. 离子阱-预习报告 (PDF) 
+ 
+</a> 
+ 
+</div> 
+ 
+ 
+</div> 
+ 
+<!-- 数字电路 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Digital Circuits 
+ 
+<span class="code"> 
+EE2502 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Fall 2024 
+ 
+</div> 
+ 
+<div class="intro"> 
+EE2502 is an introductory course on circuits designed for students in the School of Physical Sciences, covering the fundamentals of digital circuits. This review material was compiled based on Prof. Cao's lecture notes in 2024 and is intended to assist with final exam preparation. All figures are reproduced from Prof. Cao's course notes and are included for educational purposes only. 
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="digital.pdf"> 
+ 
+Digital Circuits Review Notes (PDF) 
+ 
+</a> 
+ 
+</div> 
+ 
+ 
+</div> 
+ 
+<!-- 概统 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Probability Theory and Mathematical Statistics 
+ 
+<span class="code"> 
+STAT2002 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Fall 2024 
+ 
+</div> 
+ 
+<div class="intro"> 
+STAT2002 is a course designed for non-mathematics majors, consisting primarily of two parts: probability theory and mathematical statistics. This material summarizes and organizes key concepts from the probability theory section for review. As this material is prepared from a non-mathematics perspective, it does NOT cover measure theory or related topics and is NOT intended to be mathematically rigorous. It is provided solely as a reference for students enrolled in this course. 
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="stat.pdf"> 
+ 
+Probability Theory Review Notes (PDF) 
+ 
+</a> 
+ 
+</div> 
+ 
+ 
+</div> 
+ 
+<!-- 热统 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Thermodynamics and Statistical Physics A 
+ 
+<span class="code"> 
+022062 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Fall 2025 
+ 
+</div> 
+ 
+<div class="intro"> 
+This summary focuses exclusively on the introductory statistical physics section. The structure and order of presentation have been reorganized based on my understanding of the subject, and it is intended primarily for final exam review. The years indicated for the exam questions refer to the corresponding final exams in USTC's exam collection. Some of the questions are really interesting and worth working through. 
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="thermo.pdf"> 
+ 
+Introductory Statistical Physics Review Notes (PDF) 
+ 
+</a> 
+ 
+</div> 
+ 
+ 
+</div> 
+ 
+<!-- 计算物理 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Computational Physics B 
+ 
+<span class="code"> 
+004040 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Fall 2025 
+ 
+</div> 
+ 
+<div class="intro"> 
+Most students who, like me, take the B course probably do so mainly for the credits and to save time. This material is therefore intended as a concise summary of the key points from Prof. Wei's class for final-exam preparation, <b>focusing only on the most important formulas rather than covering the entire course</b>. While it may not be the best way to understand the course, I hope it can still serve as a useful reference for exam preparation. Please note that it was transcribed from handwritten notes using handwriting recognition and proofread as a whole, but <b>some errors may still remain</b>. In case of any discrepancy, please refer to the course materials provided by the instructor. 
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="CPB.pdf"> 
+ 
+CPB Review Notes (PDF) 
+ 
+</a> 
+ 
+</div> 
+ 
+ 
+</div> 
+ 
+<!-- 近光 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Fundmentals of Modern Optics 
+ 
+<span class="code"> 
+038008 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Spring 2025 
+ 
+</div> 
+ 
+<div class="intro"> 
+ 
+038008 is a required course designed specifically for students in the Department of Optics and Optical Engineering, providing an introduction to optical researches. It is also one of the top three courses I have taken during my undergraduate studies, and I highly recommend that sophomores interested in optics consider taking it early. This collection of conceptual questions is intended to make up for the lack of a suitable textbook. After completing each chapter, it can be used to review the key ideas, and it may also be helpful for students wanting to explore beyond the depth covered in Optics A.  
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="Modern Optics.pdf"> 
+ 
+Conceptual Questions for Modern Optics (PDF) 
+ 
+</a> 
+ 
+</div> 
+<div class="references"> 
+ 
+ 
+<p class="reference-title"> 
+    <b>References</b> 
+</p> 
+ 
+<p> 
+[1] Max Born and Emil Wolf, 
+<i>Principles of Optics, 7th edition</i>, 
+Cambridge University Press. 
+</p> 
+ 
+</div> 
+</div> 
+ 
+<!-- 量子光学 --> 
+ 
+ 
+<div class="course"> 
+ 
+ 
+<div class="course-title"> 
+ 
+• Quantum Optics 
+ 
+<span class="code"> 
+PHYS5255P 
+</span> 
+ 
+</div> 
+ 
+ 
+<div class="semester"> 
+ 
+Course taken: Spring 2026 
+ 
+</div> 
+ 
+<div class="intro"> 
+ 
+PHYS5255P is one of the core graduate-level courses in the Department of Optics. The material mainly follows the first nine chapters of Scully’s classic textbook, with additional material from several other textbooks. It is intended as an introduction to quantum optics and is suitable for students who are new to the field. <b>Please note that this material was transcribed from handwritten notes using handwriting recognition and may contain some errors.</b> 
+ 
+</div> 
+ 
+<div class="material"> 
+ 
+📄 
+ 
+<a href="Quantum Optics.pdf"> 
+ 
+Quantum Optics Review Notes (PDF) - To be updated soon 
+ 
+</a> 
+ 
+</div> 
+ 
+<div class="references"> 
+ 
+ 
+<p class="reference-title"> 
+    <b>References</b> 
+</p> 
+ 
+<p> 
+[1] M. O. Scully and M. S. Zubairy, 
+<i>Quantum Optics</i>, 
+Cambridge University Press. 
+</p> 
+ 
+<p> 
+[2] Christopher C. Gerry, Peter L. Knight， 
+<i>量子光学导论</i>， 
+景俊译， 
+清华大学出版社. 
+</p> 
+ 
+<p> 
+[3] 张智明， 
+<i>量子光学</i>， 
+科学出版社. 
+</p> 
+ 
+</div> 
+ 
+</div> 
 
 
 </body>
